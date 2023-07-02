@@ -32,7 +32,6 @@ function moveZeros(arr) {
   return arr;
 }
 ```
-## Work experience
 ## Education
 * Result School
   * [HTML&CSS](https://result.school/products/html-css)
