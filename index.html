@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>My CV</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#lang" class="nav-link">Languages</a></li>
+                  </ul> 
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <section class="section section-info" id="info">
+                <div class="section-info-img">
+                    <img src="assets/img/photo.jpg" alt="My photo" class="info-img">
+                </div>
+                <div class="section-info-title">
+                    <h1 class="info-name">Mariia Mikhalchenko</h1>
+                    <h2 class="info-role">Junior frontend-developer</h2>
+                </div>                 
+            </section>
+
+            <section class="section" id="contacts">
+                <h2 class="hidden">Contacts</h2>
+                <ul class="section-contacts">
+                    <li class="contacts-item location">Berlin, Germany</li>
+                    <li class="contacts-item mail"><a href="mailto:m.mikhalchenko.de@gmail.com" target="_blank" class="contacts-link">m.mikhalchenko.de@gmail.com</a></li>
+                    <li class="contacts-item telegram"><a href="https://t.me/mary_mimimi" target="_blank" class="contacts-link">@mary_mimimi</a></li>
+                    <li class="contacts-item github"><a href="https://github.com/marymih" target="_blank" class="contacts-link">marymih</a></li>
+                </ul>
+            </section>
+
+            <section class="section" id="aboutme">
+                <h2 class="section-title">About me</h2>
+                <div class="section-aboutme">
+                    <p>I worked at a large online store for five years in two positions: content manager and business analyst. This experience provided me with an in-depth understanding of the company's internal business and development processes. My interest in front-end development led me to study this field.</p>
+                    <p>My strengths include:</p>
+                        <ul>
+                            <li>Sociability</li>
+                            <li>Responsibility</li>
+                            <li>Attention to details</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">HTML</li>
+                    <li class="skills-item">CSS</li>
+                    <li class="skills-item">JavaScript</li>
+                    <li class="skills-item">React</li>
+                    <li class="skills-item">Git</li>
+                </ul>
+            </section>
+            
+            <section class="section" id="code">
+                <h2 class="section-title">Code example</h2>
+                <pre>
+                    <code>
+                        function moveZeros(arr) {
+                            let newLength = arr.length;
+                            for (i=0; i &lt; newLength; i++) {
+                              if (arr[i] === 0) {
+                                arr.push(0);
+                                arr.splice(i, 1);
+                                newLength--;
+                                i--;
+                              }
+                            }
+                            return arr;
+                          }
+                    </code>
+                </pre>
+            </section>
+
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="education-list">
+                    <li class="education-item">
+                        <p>
+                            <a href="https://rs.school/js-stage0/" target="_blank" class="education-link">JavaScript/Front-end. Stage 0</a>
+                        </p>
+                        <p class="education-school">RS School</p>
+                        <p class="education-year">2023 - now</p>
+                    </li>
+                    <li class="education-item">
+                        <p>
+                            <a href="https://www.udemy.com/course/javascript_full/" target="_blank" class="education-link">JavaScript + React</a>
+                        </p>
+                        <p class="education-school">Udemy</p>
+                        <p class="education-year">2023 - now</p>
+                    </li>
+                    <li class="education-item">
+                        <p>
+                            <a href="https://www.codecademy.com/learn/learn-intermediate-javascript" target="_blank" class="education-link">Intermediate JavaScript</a>
+                        </p>
+                        <p class="education-school">Codecademy</p>
+                        <p class="education-year">2023</p>
+                    </li>
+                    <li class="education-item">
+                        <p>
+                            <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank" class="education-link">JavaScript</a>
+                        </p>
+                        <p class="education-school">Codecademy</p>
+                        <p class="education-year">2022 - 2023</p>
+                    </li>
+                    <li class="education-item">
+                        <p>
+                            <a href="https://result.school/products/html-css" target="_blank" class="education-link">HTML&CSS</a>
+                        </p>
+                        <p class="education-school">Result School</p>
+                        <p class="education-year">2022</p>
+                    </li>
+                    <li class="education-item">
+                        <p>Metrology, standardization and certification</p>
+                        <p class="education-school">South Ural State University, Russia</p>
+                        <p class="education-year">2010-2014</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section" id="lang">
+                <h2 class="section-title">Languages</h2>
+                <ul class="lang-list">
+                    <li class="lang-item">Russian - native</li>
+                    <li class="lang-item">English - B1</li>
+                    <li class="lang-item">French - A2</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer container">
+            <a href="https://github.com/marymih" target="_blank" class="footer-github">My GitHub</a>
+            <p>2023</p>
+            <a href="https://rs.school/js/" target="_blank"><img src="assets/svg/rs_school_js.svg" width="80" alt="RS School logo"></a>
+    </footer>
 </body>
 </html>
