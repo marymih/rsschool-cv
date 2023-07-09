@@ -42,6 +42,7 @@
             </section>
 
             <section class="section" id="contacts">
+                <h2 class="hidden">Contacts</h2>
                 <ul class="section-contacts">
                     <li class="contacts-item location">Berlin, Germany</li>
                     <li class="contacts-item mail"><a href="mailto:m.mikhalchenko.de@gmail.com" target="_blank" class="contacts-link">m.mikhalchenko.de@gmail.com</a></li>
@@ -80,7 +81,7 @@
                     <code>
                         function moveZeros(arr) {
                             let newLength = arr.length;
-                            for (i=0; i < newLength; i++) {
+                            for (i=0; i &lt; newLength; i++) {
                               if (arr[i] === 0) {
                                 arr.push(0);
                                 arr.splice(i, 1);
