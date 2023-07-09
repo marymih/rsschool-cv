@@ -24,8 +24,14 @@ pre {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 0 20px;
-    line-height: 50px;
+}
+@media (max-width: 725px) {
+    .nav-list {
+        flex-wrap: wrap;
+    }
+    .nav-list > li {
+        flex-basis: 50%;
+    }
 }
 .nav-link {
     text-decoration: none;
@@ -33,6 +39,8 @@ pre {
     font-size: 16px;
     font-weight: 500;
     color: #2D3E5B;
+    padding: 0 20px;
+    line-height: 50px;
 }
 .nav-link:hover {
     color: #DB9291;
@@ -61,6 +69,11 @@ pre {
     font-weight: 500;
     color: #2D3E5B;
 }
+@media (max-width: 725px) {
+    .info-name {
+        font-size: 30px;
+    }
+}
 .info-role {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -78,6 +91,14 @@ pre {
     padding: 0 20px;
     line-height: 50px;
 }
+@media (max-width: 800px) {
+    .section-contacts {
+        flex-wrap: wrap;
+    }
+    .section-contacts > li {
+        flex-basis: 50%;
+    }
+}
 .contacts-item{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -89,6 +110,8 @@ pre {
 .contacts-link {
     text-decoration: none;
     color: #2D3E5B;
+    padding: 0 20px;
+    line-height: 50px;
 }
 .contacts-link:hover {
     color: #DB9291;
@@ -108,7 +131,6 @@ pre {
     content: "";
     position: absolute;
     top: 18px;
-    left: -18px;
     width: 14px;
     height: 14px; 
     background-size: contain;
@@ -119,7 +141,6 @@ pre {
     content: "";
     position: absolute;
     top: 18px;
-    left: -18px;
     width: 14px;
     height: 14px; 
     background-size: contain;
@@ -130,7 +151,6 @@ pre {
     content: "";
     position: absolute;
     top: 18px;
-    left: -18px;
     width: 14px;
     height: 14px; 
     background-size: contain;
@@ -191,6 +211,11 @@ pre {
     font-weight: 300;
     letter-spacing: 2px;
     border-bottom: 1px solid #DB9291;
+}
+@media (max-width: 850px) {
+    .education-item {
+        font-size: 12px;
+    }
 }
 .education-link {
     text-decoration: none;
@@ -261,3 +286,4 @@ pre {
     background-repeat: no-repeat;
     background-image: url("assets/svg/github.svg");
 }
+
