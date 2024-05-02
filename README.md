@@ -1,3 +1,3 @@
-https://marymih.github.io/rsschool-cv/cv
+Hi there 👋
 
-https://marymih.github.io/rsschool-cv/
+You can find my CV [here](https://marymih.github.io/rsschool-cv/) 👩‍💻
