@@ -9,11 +9,24 @@ body {
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
 }
-pre {
-    padding: 16px 16px 16px 16px;
-    background-color: #F7F8F8;
-    border-radius: 20px;
-    font-size: 20px;
+a {
+    text-decoration: none;
+    color: #000000;
+}
+button {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D3E5B;
+    background-color: #DB9291;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f1adab;
+    color: #2D3E5B;
 }
 .container {
     max-width: 1024px;
@@ -199,6 +212,61 @@ pre {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("assets/svg/check.svg");
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width: 870px) {
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.projects-link {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.projects-link::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 20, 35, 0.781);
+    border-radius: 20px;
+    opacity: 0.75;
+    z-index: 1;
+}
+.projects-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.projects-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.projects-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.projects-descr {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
 }
 .education-list {
     display: flex;

@@ -20,7 +20,7 @@
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                     <li class="nav-item"><a href="#aboutme" class="nav-link">About me</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#lang" class="nav-link">Languages</a></li>
                   </ul> 
@@ -54,7 +54,7 @@
             <section class="section" id="aboutme">
                 <h2 class="section-title">About me</h2>
                 <div class="section-aboutme">
-                    <p>I worked at a large online store for five years in two positions: content manager and business analyst. This experience provided me with an in-depth understanding of the company's internal business and development processes. My interest in front-end development led me to study this field.</p>
+                    <p>I worked in big online-shop in Russia for five years in two positions: content manager and business analyst. This experience provided me with an in-depth understanding of the company's internal business and development processes. My interest in front-end development led me to study this field.</p>
                     <p>My strengths include:</p>
                         <ul>
                             <li>Sociability</li>
@@ -75,36 +75,39 @@
                 </ul>
             </section>
             
-            <section class="section" id="code">
-                <h2 class="section-title">Code example</h2>
-                <pre>
-                    <code>
-                        function moveZeros(arr) {
-                            let newLength = arr.length;
-                            for (i=0; i &lt; newLength; i++) {
-                              if (arr[i] === 0) {
-                                arr.push(0);
-                                arr.splice(i, 1);
-                                newLength--;
-                                i--;
-                              }
-                            }
-                            return arr;
-                          }
-                    </code>
-                </pre>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects">
+                    <div class="projects-item">
+                        <a class="projects-link" href="https://ravenous-iota.vercel.app/" target="_blank">
+                            <img src="/assets/img/ravenous.png" alt="ravenous app preview" class="projects-img">
+                            <div class="projects-content">
+                                <h3 class="projects-title">Ravenous</h3>
+                                <p class="projects-descr">React app for searching locals restaurants</p>
+                                <div class="projects-btn">
+                                    <button>See project</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item">
+                        <a class="projects-link" href="https://marvel-app-marymih.vercel.app/" target="_blank">
+                            <img src="/assets/img/marvel.png" alt="marvel app preview" class="projects-img">
+                            <div class="projects-content">
+                                <h3 class="projects-title">Marvel information portal</h3>
+                                <p class="projects-descr">React app with information about Marvel characters</p>
+                                <div class="projects-btn">
+                                    <button>See project</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
 
             <section class="section" id="education">
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title">Education and courses</h2>
                 <ul class="education-list">
-                    <li class="education-item">
-                        <p>
-                            <a href="https://rs.school/js-stage0/" target="_blank" class="education-link">JavaScript/Front-end. Stage 0</a>
-                        </p>
-                        <p class="education-school">RS School</p>
-                        <p class="education-year">2023 - now</p>
-                    </li>
                     <li class="education-item">
                         <p>
                             <a href="https://www.udemy.com/course/javascript_full/" target="_blank" class="education-link">JavaScript + React</a>
@@ -125,13 +128,6 @@
                         </p>
                         <p class="education-school">Codecademy</p>
                         <p class="education-year">2022 - 2023</p>
-                    </li>
-                    <li class="education-item">
-                        <p>
-                            <a href="https://result.school/products/html-css" target="_blank" class="education-link">HTML&CSS</a>
-                        </p>
-                        <p class="education-school">Result School</p>
-                        <p class="education-year">2022</p>
                     </li>
                     <li class="education-item">
                         <p>Metrology, standardization and certification</p>
