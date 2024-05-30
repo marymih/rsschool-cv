@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
     scroll-behavior: smooth; 
@@ -8,6 +10,8 @@ body {
     font-family: 'Spectral', serif;
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 a {
     text-decoration: none;
@@ -22,7 +26,8 @@ button {
 }
 .container {
     max-width: 1024px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .nav-list {
     display: flex;
@@ -82,6 +87,7 @@ button {
     display: flex;
     justify-content: start;
     gap: 50px;
+    margin-top: 50px;
 }
 .info-img {
     width: 200px;
@@ -107,15 +113,14 @@ button {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #DB9291;
-    margin-top: -20px;
 }
 .section-contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding-left: 0px;
     line-height: 40px;
+    margin-top: 20px;
 }
 .hidden {
     display: none;
@@ -190,15 +195,22 @@ button {
     letter-spacing: 2px;
     color: #DB9291;
     padding: 20px 0;
+    margin: 20px 0;
 }
 .section-aboutme {
-    padding: 16px 16px 16px 16px;
+    padding: 30px 20px;
     background-color: #F7F8F8;
     border-radius: 20px;
     font-family: 'Spectral', serif;
     font-size: 20px;
     font-weight: 300;
     color: #000000;
+}
+.section-aboutme p {
+    margin-bottom: 20px;
+}
+.section-aboutme li {
+    margin-left: 20px;
 }
 .skills-list {
     padding: 0 20px;
@@ -259,6 +271,7 @@ button {
     left: 20px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .projects-title {
     font-family: 'Lato', sans-serif;
@@ -302,6 +315,7 @@ button {
     font-weight: 300;
     letter-spacing: 2px;
     border-bottom: 1px solid #DB9291;
+    padding: 20px 0;
 }
 .education-link {
     text-decoration: none;
@@ -351,11 +365,13 @@ button {
     border-radius: 20px;
 }
 .footer {  
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
-    padding: 50px 0 0px 0;
-    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .footer-github {
     position: relative;
@@ -406,6 +422,9 @@ button {
         flex-direction: column;
         gap: 20px;
     }
+    .section-info {
+        margin-top: 0;
+    }
     .info-name {
         font-size: 30px;
     }
@@ -422,11 +441,29 @@ button {
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .education-item {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+    .education-name {
+        grid-column: span 2;
+        font-weight: 500;
+    }
+    .education-school {
+        margin-left: 30px;
+    }
 }
 @media screen and (max-width: 500px) {
     .section-info {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .info-name {
+        text-align: center;
+    }
+    .info-role {
+        text-align: center;
     }
 }
