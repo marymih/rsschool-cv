@@ -52,8 +52,7 @@ button {
     cursor: pointer;
     z-index: 2;
     float: right;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin: 15px;
 }
 .burger-btn span {
     position: absolute;
@@ -116,7 +115,7 @@ button {
     align-items: center;
     list-style: none;
     padding-left: 0px;
-    line-height: 50px;
+    line-height: 40px;
 }
 .hidden {
     display: none;
@@ -138,13 +137,14 @@ button {
 .contacts-link:hover {
     color: #DB9291;
 }
-.location {
+.location p{
     padding: 0 20px;
+    margin: 0;
 }
 .location:before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 13px;
     left: 0;
     width: 14px;
     height: 14px; 
@@ -296,6 +296,7 @@ button {
 .education-item {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
+    gap: 30px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -339,7 +340,7 @@ button {
 }
 .lang-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     font-family: 'Lato', sans-serif;
@@ -374,13 +375,14 @@ button {
 
 @media screen and (max-width: 860px) {
     .section-contacts {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .section-contacts > li {
-        flex-basis: 50%;
+    .education-list {
+        row-gap: 10px;
     }
     .education-item {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 730px) {
@@ -406,5 +408,25 @@ button {
     }
     .info-name {
         font-size: 30px;
+    }
+}
+@media screen and (max-width: 565px) {
+    .section-info {
+        gap: 20px;
+    }
+    .info-img {
+        width: 180px;
+        height: 180px;
+    }
+    .section-contacts {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
