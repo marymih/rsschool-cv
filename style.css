@@ -293,6 +293,7 @@ button {
     background-color: #DB9291;
     border: none;
     border-radius: 10px;
+    max-width: 120px;
     padding: 10px 20px;
     cursor: pointer;
 }
