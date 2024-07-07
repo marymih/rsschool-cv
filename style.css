@@ -82,7 +82,17 @@ button {
 .burger-btn.open span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
 }
-
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .section-info {
   display: flex;
   justify-content: start;
